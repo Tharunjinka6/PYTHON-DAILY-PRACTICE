@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border:1px groove lightgray;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 60px 80px;
+    Display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+
+
+}
+.profile-pic{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+}
+p{
+    margin:0;
+}
+button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(68, 175, 242);
+    border-radius: 8px;
+    border:none;
+    color:white;
+    font-size: 15px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: green;
+}
