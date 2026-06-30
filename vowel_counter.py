@@ -1,6 +1,6 @@
 #without using Built-in functions
-str=input("Enter the string:")
-vowels=["a","e","i","o","u","A","E","I","O","U"]
+str=input("Enter the string:").lower()
+vowels=["a","e","i","o","u"]
 count=0
 for i in str:
     for j in vowels:
@@ -9,8 +9,8 @@ for i in str:
 print(count)
 
 #using built-in function
-str1=input("Enter the string:")
-vowels1=["a","e","i","o","u","A","E","I","O","U"]
+str1=input("Enter the string:").lower()
+vowels1=["a","e","i","o","u"]
 count1=0
 for i in str1:
     if i in vowels1:
