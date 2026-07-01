@@ -1,14 +1,21 @@
+#used chatgpt and learned this
+class Solution:
+    def frequencyCount(self, arr):
+        n = len(arr)
+        list1 = [0] * n
+        for num in arr:
+            if 1 <= num <= n:
+                list1[num - 1] += 1
+        return list1
+
+#Time complexity 0(n^2) so it is not working in geeks for greeks
 arr=[2,3,2,3,5]
-sorted_arr=sorted(arr)
-n=arr[-1]
-count_2=0
-count_3=0
-count_5=0
+n=len(arr)
+list=[]
 for i in range(1,n+1):
-    if i==2:
-        count_2+=1
-    elif i==3:
-        count_3+=1
-    elif i==5:
-        count_5+=1
-print(count_2,count_3,count_5)
+    count=0
+    for num in arr:
+        if num==i:
+            count+=1
+    list.append(count)
+print(list)
